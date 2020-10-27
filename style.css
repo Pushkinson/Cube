@@ -1,0 +1,93 @@
+body {
+    background-color: rgba(63, 71, 160, 0.1);
+    font: 1em 'PT Sans', Tahoma, Arial;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 80px auto 20px;
+    /* margin-left: 25%; */
+    -webkit-perspective: 900px;
+    display: flex;
+}
+
+.cube {
+    margin: 0 auto;
+    margin-bottom: 200px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    -webkit-transform-origin: 50% 50% -150px;
+    transform-style: preserve-3d;
+}
+
+.side {
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 0, 0, .3);
+    background: -webkit-radial-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+    position: absolute;
+    border: 10px solid #fff;
+    border-radius: 15px;
+    font-size: 5em;
+    color: #fff;
+    line-height: 300px;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.4);
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+    -webkit-transform-origin: 50% 50% -150px;
+    /* -webkit-backface-visibility: hidden; */
+    transition: 1s;
+}
+
+.side-1 {
+    
+}
+
+.side-2 {
+    transform: rotateY(90deg);
+}
+
+.side-3 {
+    transform: rotateY(-90deg);
+}
+
+.side-4 {
+    transform: rotateX(90deg);
+}
+
+.side-5 {
+    transform: rotateX(-90deg);
+}
+
+.side-6 {
+    transform: rotateY(180deg);
+}
+
+.buttons {
+    width: 500px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.button {
+    width: 100%;
+    height: 30px;
+    margin: 20px;
+    background-color: #6bd0c5;
+    border: 2px solid #247169;
+    border-radius: 4px;
+    line-height: 40px;
+    font-size: 1.3em;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.button:hover {
+    background-color: #247169;
+    color: #ffffff;
+}
